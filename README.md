@@ -1,4 +1,4 @@
-# Shell Scripting (Bash + Zsh) — Follow Along Repo
+# Shell Scripting (Bash + Zsh)
 
 A small, focused repository to help you **learn shell usage + shell scripting** by *actually doing it*.
 
