@@ -290,6 +290,8 @@ After install, you’ll have:
 - `~/.zshrc` (your Zsh config)
 - `~/.oh-my-zsh/` (Oh My Zsh directory)
 
+Small tip: you do not need to be inside a special config folder before running these commands. Run them from your normal home workspace, and the relative paths in the clone commands will place everything in the right location automatically.
+
 ---
 
 ### Step 2) Install Powerlevel10k theme
