@@ -52,7 +52,7 @@ So how do applications “ask” the kernel? They use **system calls** (OS-provi
 
 ---
 
-## 3) Shell vs Terminal (the common confusion)
+## 3) Shell vs Terminal
 This confusion is everywhere, so let’s make it crystal clear:
 
 ### Terminal (the window/app)
@@ -80,7 +80,7 @@ Common shells:
 
 ---
 
-## 4) Restaurant analogy (refined + accurate)
+## 4) Restaurant analogy
 Think of it like this:
 
 - **Kernel = the kitchen + head chef rules** (only the kitchen can touch the “real hardware” like fire and knives)
@@ -106,7 +106,7 @@ Windows has shells too.
 
 From there, you can use Bash (and install Zsh if you want).
 
-### Option B: VirtualBox Linux (what I’m using)
+### Option B: VirtualBox Linux 
 You can run Kali (or Ubuntu) inside VirtualBox and follow along exactly the same.
 
 ---
@@ -178,8 +178,8 @@ We’ll create a script file, write a few lines, and run it.
 
 ### Pick a text editor
 Options:
-- **nano** (simple, beginner-friendly) ✅
-- **vim/neovim** (powerful… but if you choose vim on day 1, you either have discipline or no fear)
+- **nano** (simple, recommended)
+- **vim/neovim** (powerful… but if you choose vim on day 1, your either a veteran or you dont have a life lol)
 
 We’ll use **nano**.
 
@@ -200,12 +200,12 @@ echo "Hello, World!"
 echo "My shell scripting journey starts here."
 ```
 
-**Line-by-line (important):**
+**Line-by-line explanation:**
 - `#!/usr/bin/env bash` 
   This is the **shebang**. It tells the system: “Run this file using `bash`.” 
-  Using `/usr/bin/env` helps find bash in a flexible way across systems.
+  Using `/usr/bin/env` helps find bash in a flexible way across systems, Because in different systems the binary of bash might be present in different file locations that we cannot hardcode, so a smart and flexible approach.
 - `echo "..."` 
-  `echo` prints text to the terminal.
+  `echo` prints text to the terminal, it is a command.
 
 ### Save and exit nano
 - Save: `Ctrl + O` then press `Enter`
@@ -227,47 +227,12 @@ chmod +x lessons/lesson01_hello.sh
 ```
 
 **What these mean:**
-- `chmod +x` adds **execute** permission.
+- `chmod +x` adds **execute** permission. Click to learn about it: https://lokii.tech/intermediate/notes/linux_course.html
 - `./` means “run the file from this directory path”.
 
 ---
 
-## Common mistakes (and quick fixes)
-### Mistake 1: “Permission denied”
-Fix:
-```bash
-chmod +x lessons/lesson01_hello.sh
-```
-Or run with:
-```bash
-bash lessons/lesson01_hello.sh
-```
-
-### Mistake 2: “No such file or directory”
-Check you’re in the repo root:
-```bash
-ls
-ls lessons
-```
-
-### Mistake 3: Weird errors after copying
-Make sure the file has Unix line endings (especially if edited on Windows).
-On Linux you can fix with:
-```bash
-sudo apt install -y dos2unix
-dos2unix lessons/lesson01_hello.sh
-```
-
----
-
-## Mini practice task (do this now)
-1. Add a third line that prints your name (or nickname) and today’s date (manually typed).
-2. Change the message text.
-3. Run the script again using **Way A** and **Way B**.
-
----
-
-## Checkpoint quiz (answer in 1–2 lines each)
+## Checkpoint quiz 
 1) What’s the difference between a **terminal** and a **shell**? 
 2) What does the **kernel** do, at a high level? 
 3) What is a **shebang**, and why do we use it? 

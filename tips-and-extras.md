@@ -243,9 +243,14 @@ Learn what it does first (use `man`, `--help`, `tldr`).
 
 ## Optional: “Ricing” your terminal (Zsh + Oh My Zsh + Powerlevel10k)
 
-If you’re going to spend a lot of time in the terminal, making it look clean and feel comfortable is a **real productivity win**.
+If you’re going to spend a lot of time in the terminal, making it look clean and feel comfortable is a **real productivity win** and if you are too lazy to do it, you can use an installer I made exactly for people like you! Click here to get there: 
+https://github.com/UnExplainableFish52/pvtcfg
 
-This section is **optional** (you can skip it and still follow the whole course), but if you do it, your daily terminal experience becomes way nicer.
+Easy ricing in under a minute! No Cap!!
+
+---
+
+This section (Manual Ricing) is **optional** (you can skip it and still follow the whole course), but if you do it, your daily terminal experience becomes way nicer.
 
 We’ll set up:
 - **Zsh** (Z Shell) as your interactive shell
